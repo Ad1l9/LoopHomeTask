@@ -89,16 +89,39 @@
 //Daxil edilən N ədədinin 2-lik say sistemindəki qarşılığını göstərən proqram yazın.
 
 
+//int N = int.Parse(Console.ReadLine());
+//string binaryVersion = "";
+
+//while (N/2!=0)
+//{
+//    binaryVersion = N % 2 + binaryVersion;
+//    N = (N - N % 2) / 2;
+//}
+//Console.WriteLine("1"+binaryVersion);
+
+
+
+
+
+
+
+
+//Task5
+
+//Daxil edilən N ədədinin ən böyük və ən kiçik rəqəmlərinin hasilini ekrana çıxaran proqram yazın.
+
+
 int N = int.Parse(Console.ReadLine());
-string binaryVersion = "";
 
-while (N/2!=0)
+int less=N%10, greater=N%10;
+
+while(N > 9)
 {
-    binaryVersion = N % 2 + binaryVersion;
-    N = (N - N % 2) / 2;
+    N-=N%10;
+    N /= 10;
+    if(N%10 > greater) greater = N % 10;
+    if(N%10 < less) less = N % 10;
 }
-Console.WriteLine("1"+binaryVersion);
-
-
+Console.WriteLine($"greater({greater})+less({less})={greater+less}");
 
 
