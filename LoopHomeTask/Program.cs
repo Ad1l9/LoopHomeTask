@@ -19,7 +19,7 @@
 
 //    if (num / 2 == 1)
 //    {
-//        Console.WriteLine("2 quvvetidir");
+//        Console.WriteLine("2 quvvetidir");                                                            
 //        break;
 
 //    }
@@ -120,7 +120,7 @@
 //    N-=N%10;
 //    N /= 10;
 //    if(N%10 > greater) greater = N % 10;
-//    if(N%10 < less) less = N % 10;
+//    if(N%10 < less) less = N % 10;      
 //}
 //Console.WriteLine($"greater({greater})+less({less})={greater+less}");
 
@@ -143,13 +143,13 @@
 //*****...
 
 
-int N = int.Parse(Console.ReadLine());
+//int N = int.Parse(Console.ReadLine());
 
-for(int i = 0; i < N; i++)
-{
-    for(int j = 0; j < N; j++)
-    {
-        if(i==j || j<i) Console.Write("* ");
-    }
-    Console.WriteLine();
-}
+//for(int i = 0; i < N; i++)
+//{
+//    for(int j = 0; j < N; j++)
+//    {
+//        if(i==j || j<i) Console.Write("* ");
+//    }
+//    Console.WriteLine();
+//}
