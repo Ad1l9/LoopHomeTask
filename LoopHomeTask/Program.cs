@@ -37,26 +37,47 @@
 //1-dən N-ə qədər ədədlər arasında neçə digit rəqəmi var?
 
 
-int N=int.Parse(Console.ReadLine());
-int digit=int.Parse(Console.ReadLine());
-int count = 1;
-int num;
+//int N=int.Parse(Console.ReadLine());
+//int digit=int.Parse(Console.ReadLine());
+//int count = 1;
+//int num;
 
-for(int i = 10; i <= N; i++)
+//for(int i = 10; i <= N; i++)
+//{
+//    num = i;
+//    while (num / 10 > 0)
+//    {
+//        if (num% 10 == digit)
+//        {
+//            count++;
+//        }
+//        num = (num - num % 10) / 10;
+
+//    }
+//    if (num == digit) count++;
+//}
+//Console.WriteLine(count);
+
+
+
+
+
+
+
+//Task3
+
+//Ədədin mükəmməl olub-olmamasını yoxlayan proqram yazın.
+//Əgər mükəmməldirsə ekrana true, əks halda false çıxsın.
+
+int num=int.Parse(Console.ReadLine());
+int sum = 0;
+
+for(int i=1; i<num; i++)
 {
-    num = i;
-    while (num / 10 > 0)
-    {
-        if (num% 10 == digit)
-        {
-            count++;
-        }
-        num = (num - num % 10) / 10;
-
-    }
-    if (num == digit) count++;
+    if (num % i == 0) sum += i;
 }
-Console.WriteLine(count);
+if(sum == num) Console.WriteLine(true);
+else Console.WriteLine(false);
 
 
 
