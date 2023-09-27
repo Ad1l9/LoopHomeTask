@@ -36,7 +36,6 @@
 //Task2
 //1-dən N-ə qədər ədədlər arasında neçə digit rəqəmi var?
 
-using System;
 
 int N=int.Parse(Console.ReadLine());
 int digit=int.Parse(Console.ReadLine());
