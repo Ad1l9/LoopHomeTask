@@ -69,15 +69,35 @@
 //Ədədin mükəmməl olub-olmamasını yoxlayan proqram yazın.
 //Əgər mükəmməldirsə ekrana true, əks halda false çıxsın.
 
-int num=int.Parse(Console.ReadLine());
-int sum = 0;
+//int num=int.Parse(Console.ReadLine());
+//int sum = 0;
 
-for(int i=1; i<num; i++)
+//for(int i=1; i<num; i++)
+//{
+//    if (num % i == 0) sum += i;
+//}
+//if(sum == num) Console.WriteLine(true);
+//else Console.WriteLine(false);
+
+
+
+
+
+
+//Task4
+
+//Daxil edilən N ədədinin 2-lik say sistemindəki qarşılığını göstərən proqram yazın.
+
+
+int N = int.Parse(Console.ReadLine());
+string binaryVersion = "";
+
+while (N/2!=0)
 {
-    if (num % i == 0) sum += i;
+    binaryVersion = N % 2 + binaryVersion;
+    N = (N - N % 2) / 2;
 }
-if(sum == num) Console.WriteLine(true);
-else Console.WriteLine(false);
+Console.WriteLine("1"+binaryVersion);
 
 
 
