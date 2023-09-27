@@ -111,17 +111,45 @@
 //Daxil edilən N ədədinin ən böyük və ən kiçik rəqəmlərinin hasilini ekrana çıxaran proqram yazın.
 
 
+//int N = int.Parse(Console.ReadLine());
+
+//int less=N%10, greater=N%10;
+
+//while(N > 9)
+//{
+//    N-=N%10;
+//    N /= 10;
+//    if(N%10 > greater) greater = N % 10;
+//    if(N%10 < less) less = N % 10;
+//}
+//Console.WriteLine($"greater({greater})+less({less})={greater+less}");
+
+
+
+
+
+
+
+
+
+
+//Task6
+
+
+//*
+//**
+//***
+//****
+//*****...
+
+
 int N = int.Parse(Console.ReadLine());
 
-int less=N%10, greater=N%10;
-
-while(N > 9)
+for(int i = 0; i < N; i++)
 {
-    N-=N%10;
-    N /= 10;
-    if(N%10 > greater) greater = N % 10;
-    if(N%10 < less) less = N % 10;
+    for(int j = 0; j < N; j++)
+    {
+        if(i==j || j<i) Console.Write("* ");
+    }
+    Console.WriteLine();
 }
-Console.WriteLine($"greater({greater})+less({less})={greater+less}");
-
-
